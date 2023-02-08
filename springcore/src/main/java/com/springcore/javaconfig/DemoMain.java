@@ -11,7 +11,7 @@ public class DemoMain {
 		ApplicationContext context = 
 				new AnnotationConfigApplicationContext(JavaConfig.class);
 		
-		Student student =  context.getBean("firststudent",Student.class);
+		Student student =  context.getBean("getStudent",Student.class);
 		System.out.println(student);
 		student.study();
 		
