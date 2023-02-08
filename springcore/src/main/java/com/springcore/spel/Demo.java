@@ -23,6 +23,9 @@ public class Demo {
 	@Value("#{ new java.lang.String('Durgesh Tiwari')}")
 	private String name;
 	
+	@Value("#{8>3}")
+	private boolean isActive;
+	
 	public double getE() {
 		return E;
 	}
@@ -53,9 +56,16 @@ public class Demo {
 	public void setName(String name) {
 		this.name = name;
 	}
+	public boolean isActive() {
+		return isActive;
+	}
+	public void setActive(boolean isActive) {
+		this.isActive = isActive;
+	}
 	@Override
 	public String toString() {
-		return "Demo [x=" + x + ", y=" + y + ", z=" + z + ", E=" + E + ", name=" + name + "]";
+		return "Demo [x=" + x + ", y=" + y + ", z=" + z + ", E=" + E + ", name=" + name + ", isActive=" + isActive
+				+ "]";
 	}
 	
 	
